@@ -1,9 +1,10 @@
 import json
 import jieba
+from tqdm.auto import tqdm
 
 with open("corpus_text.txt", "r", encoding="utf8") as file:
     text_cuts = []
-    for text in file:
+    for text in tqdm(file, ncols=100):
         text_cut = list(jieba.cut(text))
         if len(text_cut) < 3:
             continue

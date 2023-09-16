@@ -1,1 +1,1 @@
-# Markhov_chaintext_generationn
+# Markhov_chain_text_generationn
